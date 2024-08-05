@@ -11,10 +11,9 @@ class Program
     {
         PlatePagesGenerator platePagesGenerator = new PlatePagesGenerator();
         PlateInformationGenerator plateInformationGenerator = new();
-        plateInformationGenerator.AddPageLinks(platePagesGenerator.GeneratePages());
-        plateInformationGenerator.GeneratePlates(3);
-
-
+        plateInformationGenerator.AddPageLinks(platePagesGenerator.GeneratePages(  1));
+        plateInformationGenerator.GeneratePlates(30);
+        plateInformationGenerator.GetPlates();
 
 
 

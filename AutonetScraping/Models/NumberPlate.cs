@@ -12,7 +12,7 @@ namespace AutonetScraping.Models
         public string? Description { get; set; }
         public decimal? Price { get; set; }
         public string? Username {  get; set; }
-        public List<string>? Phones {  get; set; }
+        public string? Phone {  get; set; }
         public string? Place {  get; set; }
 
     }
