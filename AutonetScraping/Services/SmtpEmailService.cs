@@ -89,7 +89,7 @@ namespace AutonetScraping.Services
             {
                 smtp.Send(message);
             }
-            Console.ForegroundColor= ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Email sent successfully.");
             Console.ForegroundColor= ConsoleColor.White;
         }
