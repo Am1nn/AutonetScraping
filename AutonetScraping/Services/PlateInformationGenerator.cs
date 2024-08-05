@@ -100,6 +100,7 @@ public class PlateInformationGenerator
             }
             NumberPlates?.Add(NewPlate);
             plateCountChecker++;
+            PlateCount++;
         }
         return NumberPlates;
     }

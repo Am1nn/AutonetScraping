@@ -11,13 +11,14 @@ class Program
     {
         PlatePagesGenerator platePagesGenerator = new PlatePagesGenerator();
         PlateInformationGenerator plateInformationGenerator = new();
-        plateInformationGenerator.AddPageLinks(platePagesGenerator.GeneratePages(  1));
-        plateInformationGenerator.GeneratePlates(30);
+        plateInformationGenerator.AddPageLinks(platePagesGenerator.GeneratePages(1));
+        plateInformationGenerator.GeneratePlates(7);
         plateInformationGenerator.GetPlates();
 
 
-
-
+        SmtpEmailService emailService = new SmtpEmailService();
+        emailService.SendEmail(plateInformationGenerator.GetResults());
+        
 
     }
 }
